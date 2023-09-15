@@ -29,42 +29,27 @@ class FrontendController
     }
     public function index()
     {
-        // $users = [
-        //     [
-        //         'first' => 'Johan',
-        //         'last' => 'Hedman',
-        //     ],
-        //     [
-        //         'first' => 'Gregor',
-        //         'last' => 'Wiggert',
-        //     ]
-        // ];
-        //$this->frontendEngine->show('index', $users);
-        $this->frontendEngine->show('index', $this->db->fetchAll("SELECT first,last FROM users"));
+        $this->frontendEngine->show('index', $this->db->fetchAll("SELECT * FROM users"));
     }
     public function hallo()
     {
-        // $var = [
-        //     'first' => 'Johan',
-        //     'last' => 'Hedman',
-        // ];
-        // $this->frontendEngine->show('hallo', $var);
-        $this->frontendEngine->show('hallo', $this->db->fetchSingle("SELECT first,last FROM users WHERE first like 'Gregor'"));
+        $this->frontendEngine->show('hallo', $this->db->fetchSingle("SELECT token,first,last FROM users WHERE first like 'Gregor'"));
+    }
+    public function page($getVariables)
+    {
+        if (!empty($getVariables)) {
+            // The value I want is the first part after 'page/'
+            $userId = $getVariables[0];
+            $sql = "SELECT * FROM users WHERE token LIKE :token";
+            $params = [':token' => $userId];
+            $this->frontendEngine->show('page', $this->db->fetchSingle($sql, $params));
+        } else {
+            // Handle the case where no value is provided in the URL
+            echo "User ID is missing from the URL.";
+        }
     }
     public function user()
     {
-        // $users = [
-        //     [
-        //         'first' => 'Johan',
-        //         'last' => 'Hedman',
-        //     ],
-        //     [
-        //         'first' => 'Gregor',
-        //         'last' => 'Wiggert',
-        //     ]
-        // ];
-
-        //$this->frontendEngine->show('user', $users);
         $this->frontendEngine->show('user', $this->db->fetchAll("SELECT first,last FROM users"));
     }
 }
