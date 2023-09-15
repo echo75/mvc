@@ -1,0 +1,6 @@
+# Default ignored files
+.env
+.DS_Store
+.idea
+node_modules/
+vendor/
