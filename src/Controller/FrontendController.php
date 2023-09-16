@@ -52,4 +52,13 @@ class FrontendController
     {
         $this->frontendEngine->show('user', $this->db->fetchAll("SELECT first,last FROM users"));
     }
+    public function bootstrap()
+    {
+        $directory = dirname(__FILE__);
+        $array = [
+            'directory' => $directory
+        ];
+        //$this->frontendEngine->show('bootstrap', $this->db->fetchAll("SELECT * FROM users"));
+        $this->frontendEngine->show('bootstrap', $array);
+    }
 }
