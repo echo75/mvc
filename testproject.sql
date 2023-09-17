@@ -49,7 +49,7 @@ INSERT INTO `users` (`id`, `token`, `first`, `last`, `email`, `text`) VALUES
 (2, 'abcdef', 'Gregor', 'Beckstein', 'greg@gmail.com', 'Gregor loves to eat in bulk.'),
 (3, 'abc123', 'Jesper', 'Sanders', 'jesper.sanders@yahoo.se', 'Jesper loves meowing.'),
 (4, '123der', 'Sandy', 'Summer', 'sandy@gmail.com', 'Sandy likes to catch mice.'),
-(5, 'abcd12', 'Julia', 'Oster', 'julia.oster@gmx.de', 'Sandy likes to fart.'),
+(5, 'abcd12', 'Julia', 'Oster', 'julia.oster@gmx.de', 'Julia likes to fart.'),
 (6, 'klm876', 'Gerda', 'Gehlert', 'gerda@web.de', 'Gerda loves to groom her fur.'),
 (7, 'hzgtfr', 'Stella', 'Pollock', 's.pollock@web.de', 'Stella loves to eat fish she caught in the lake.'),
 (8, 'frdcse', 'Fred', 'Feuerstein', 'f.feuerstein@web.de', 'Fred loves to sunbath.');
