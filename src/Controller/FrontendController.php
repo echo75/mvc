@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace TestProjekt\Controller;
+namespace TestProject\Controller;
 
-use TestProjekt\DB\DB;
-use TestProjekt\Frontend\FrontendEngine;
+use TestProject\DB\DB;
+use TestProject\Frontend\FrontendEngine;
 
 include(__DIR__ . '/../Frontend/FrontendEngine.php');
 include(__DIR__ . '/../DB/db.php');

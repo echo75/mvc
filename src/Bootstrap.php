@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace TestProjekt;
+namespace TestProject;
 
 require('Controller/FrontendController.php');
 
-$class = 'TestProjekt\Controller\FrontendController';
+$class = 'TestProject\Controller\FrontendController';
 
 $routes = [
     '' => [$class, 'index'],

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TestProjekt\Frontend;
+namespace TestProject\Frontend;
 
 class FrontendEngine
 {
