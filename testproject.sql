@@ -36,22 +36,23 @@ CREATE TABLE `users` (
   `token` varchar(255) COLLATE utf8mb4_swedish_ci NOT NULL,
   `first` varchar(255) COLLATE utf8mb4_swedish_ci NOT NULL,
   `last` varchar(255) COLLATE utf8mb4_swedish_ci NOT NULL,
-  `email` varchar(255) COLLATE utf8mb4_swedish_ci NOT NULL
+  `email` varchar(255) COLLATE utf8mb4_swedish_ci NOT NULL,
+  `text` text COLLATE utf8mb4_swedish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_swedish_ci;
 
 --
 -- Daten für Tabelle `users`
 --
 
-INSERT INTO `users` (`id`, `token`, `first`, `last`, `email`) VALUES
-(1, 'abcabc', 'Johan', 'Hedman', 'johan.hedman@yahoo.de'),
-(2, 'abcdef', 'Gregor', 'Beckstein', 'greg@gmail.com'),
-(3, 'abc123', 'Jesper', 'Sanders', 'jesper.sanders@yahoo.se'),
-(4, '123der', 'Sandy', 'Summer', 'sandy@gmail.com'),
-(5, 'abcd12', 'Julia', 'Oster', 'julia.oster@gmx.de'),
-(6, 'klm876', 'Gerda', 'Gehlert', 'gerda@web.de'),
-(7, 'hzgtfr', 'Stella', 'Pollock', 's.pollock@web.de'),
-(8, 'frdcse', 'Fred', 'Feuerstein', 'f.feuerstein@web.de');
+INSERT INTO `users` (`id`, `token`, `first`, `last`, `email`, `text`) VALUES
+(1, 'abcabc', 'Johan', 'Hedman', 'johan.hedman@yahoo.de', 'Johan loves to purr.'),
+(2, 'abcdef', 'Gregor', 'Beckstein', 'greg@gmail.com', 'Gregor loves to eat in bulk.'),
+(3, 'abc123', 'Jesper', 'Sanders', 'jesper.sanders@yahoo.se', 'Jesper loves meowing.'),
+(4, '123der', 'Sandy', 'Summer', 'sandy@gmail.com', 'Sandy likes to catch mice.'),
+(5, 'abcd12', 'Julia', 'Oster', 'julia.oster@gmx.de', 'Sandy likes to fart.'),
+(6, 'klm876', 'Gerda', 'Gehlert', 'gerda@web.de', 'Gerda loves to groom her fur.'),
+(7, 'hzgtfr', 'Stella', 'Pollock', 's.pollock@web.de', 'Stella loves to eat fish she caught in the lake.'),
+(8, 'frdcse', 'Fred', 'Feuerstein', 'f.feuerstein@web.de', 'Fred loves to sunbath.');
 
 --
 -- Indizes der exportierten Tabellen
