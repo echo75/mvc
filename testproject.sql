@@ -7,9 +7,9 @@
 -- Server-Version: 5.7.39
 -- PHP-Version: 8.1.13
 
-CREATE DATABASE IF NOT EXISTS `testprojekt` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_swedish_ci;
+CREATE DATABASE IF NOT EXISTS `testproject` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_swedish_ci;
 
-USE `testprojekt`;
+USE `testproject`;
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -22,7 +22,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Datenbank: `testprojekt`
+-- Datenbank: `testproject`
 --
 
 -- --------------------------------------------------------
