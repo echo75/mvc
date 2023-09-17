@@ -1,7 +1,5 @@
 # MVC in PHP
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 An application written in PHP using the MVC model.
 
 ## Accessing the app online
