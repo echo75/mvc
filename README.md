@@ -6,7 +6,7 @@ An application written in PHP using the MVC model.
 
 ## Accessing the app online
 
-A hosted production version is available at https://hedman.de/
+A hosted production version is available at http://mvc.hedman.de/
 
 ## Setting up locally for development
 
