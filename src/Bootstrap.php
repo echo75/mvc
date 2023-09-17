@@ -50,5 +50,8 @@ if (array_key_exists($route, $routes)) {
     }
 } else {
     http_response_code(404);
-    echo "Nicht Gefunden";
+    // URL of the remote HTML page you want to render
+    $html = file_get_contents(__DIR__ . "/../templates/404.html");
+    echo $html;
+    exit;
 }
