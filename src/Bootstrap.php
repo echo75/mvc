@@ -13,7 +13,8 @@ $routes = [
     'hallo' => [$class, 'hallo'],
     'user' => [$class, 'user'],
     'page' => [$class, 'page'],
-    'bootstrap' => [$class, 'bootstrap']
+    'bootstrap' => [$class, 'bootstrap'],
+    'installation' => [$class, 'installation']
 ];
 
 // Get the path from the URL
