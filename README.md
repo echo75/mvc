@@ -19,7 +19,7 @@ Create a `.env` file in the root directory with contents similar to the `.env.ex
 
 Run the `testproject.sql` on your database, if you want to have some test data to run the app. It creates the database `testproject` with the table `users` on your local MySQL-Server.
 
-The app will be available most likley at http://localhost:8888
+The app will be available most likely at http://localhost:8888 or http://localhost:8080, depending on your local server configuration.
 
 ## MIT License
 
