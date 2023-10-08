@@ -14,3 +14,16 @@ body {
 .hint-get-var {
     font-size: 12px;
 }
+
+.hint-photos {
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.hint-photos a {
+    color: rgb(190, 190, 201) !important;
+} 
+
+.hint-photos a:hover {
+    color: #0d6efd !important;
+}
